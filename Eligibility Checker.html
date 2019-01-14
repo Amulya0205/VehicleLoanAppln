@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+            </script>
+<script>
+            $(document).ready(function(){
+        $("#btn-bikes").click(function(){
+             var BIKES = new Array("Gearless","Sports-Bike","Touring","Cruiser");
+                $("#dropdown").find('option').remove();
+                for(i=0; i < BIKES.length; i++){
+                     $("#dropdown").append('<option value="'+BIKES[i]+'">'+BIKES[i]+'</option>');
+                 }
+        });
+        $("#btn-cars").click(function(){
+              var CARS = new Array("Ford","Honda","Toyota","Suzuki");
+                  $("#dropdown").find('option').remove();
+                  for(i=0; i < CARS .length; i++){
+                      $("#dropdown").append('<option value="'+CARS [i]+'">'+CARS [i]+'</option>');
+                   }
+         });
+});
+            </script>
+    </head>
+<body> 
+<center>
+    <h1> Eligiblity Checker </h1>
+    <form>
+            <fieldset>
+                <table>     <col width="200px">     <col width="200px">
+                    <tr><td>
+                    Loan For:</td><td>
+                            <input type="radio" name="bike" value="Bike" id="btn-bikes"> Bike
+                            <input type="radio" name="car" value="Car" id="btn-cars"> Car<br>
+                            <br> </td></tr>                    <tr><td>
+                            Vehicle Type:   </td> <td>
+                            <select id = "dropdown">
+                            </select>
+
+<br><br>
+<tr><td>
+
+                </td>
+                </tr>
+                    <tr><td>
+                    Loan Amount: </td>   <td>
+                    <input type="number" name="loanAmount"> 
+                    <br><br> </td></tr>
+                    <tr><td>
+                    Annual Salary  </td><td>
+                    <input type="number" value="Submit"> 
+                    <br>
+                    <br></td></tr>                    <tr><td>
+                    Age  </td> <td>
+                    <input type="number" value="Age">
+                    <br><br>  </td>            </tr>      <tr><td>
+                    Type of Employment </td><td>
+                    <select name="Employement" width= "200px">
+                        <option value="Business">Business</option>
+                        <option value="Service">Service</option>
+                        <option value="Self-Employed">Self-Employed</option>
+                        <option value="Unemployed">Unmployed</option>
+                      </select> <br><br></td></tr>
+                      <tr><td>
+                      Experience in current firm </td> <td>
+                      <input type="number" name="Experience"> <br><br></td></tr>
+                      <tr><td>
+                      Existing loan </td><td>
+                      <input type="number" name="existingLoan"><br><br></td></tr>
+                </table>
+            </fieldset>
+
+            
+        
+    
+          
+    
+</center>
+     
+  
+</body> 
+</html> 

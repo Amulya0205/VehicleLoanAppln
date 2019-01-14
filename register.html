@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<script>
+ $("#txtfuturedate").datepicker({
+    maxDate: 0
+});
+</script>
+</head>
+<body onload='document.form1.firstname.focus()'>
+
+
+<center>
+<h1>New Registration</h1>
+
+
+</center>
+<form name="form1">
+  <fieldset>
+    <legend>Personal information:</legend>
+    <table class="tbl">
+    <col width="200px">     <col width="200px">  <col width="200px">  <col width="200px"> <col width="200px">
+    
+
+    
+    <tr><td align="left" >First name:</td>
+    <td>
+    <input type="text" name="firstname" placeholder="First Name">
+    </td> <td>  </td>
+    <td align="left"> Last name:</td><td>
+          <input type="text" name="lastname" placeholder="Last Name">
+    </td>
+  <tr>
+    </tr>
+  </tr>
+
+    <tr height="30px"><td align="left">
+    Date of Birth:</td>
+    <td> <input id="txtfuturedate" type="text" >
+    </td></tr>
+    <tr height="30px">
+    <td align='left'> Gender</td>
+    <td><input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+    </td>
+  </tr>
+
+  <tr height="30px"><td align='left'>PAN Number</td>
+    <td>
+    <input type="text" name="firstname" placeholder="First Name">
+    </td> <td>  </td>
+    <td align='left' >  AADHAR number</td>
+    <td>
+    <input type="text" name="lastname" placeholder="Last Name">
+    </td></tr>
+
+    <tr height="30px"><td align='left'>Mobile Number</td>
+      <td>
+      <input type="text" name="firstname" placeholder="Mobile Number">
+      </td> <td>  </td>
+      <td align='left' > Email ID</td>
+      <td>
+      <input type="text" name="lastname" placeholder="Email ID">
+      </td></tr>
+
+      <tr height="30px"><td align='left'>Address 1: </td>
+        <td>
+        <input type="text" name="firstname" placeholder="Line 1">
+        </td> <td>  </td>
+        <td align='left' >  Address 2 :</td>
+        <td>
+        <input type="text" name="lastname" placeholder="Line 2">
+        </td></tr>
+
+        <tr height="30px"><td align='left'>City</td>
+          <td>
+          <input type="text" name="firstname" placeholder="City">
+          </td> <td>  </td>
+          <td align='left' >  State</td>
+          <td>
+          <input type="text" name="lastname" placeholder="State">
+          </td></tr>
+
+        <tr height="30px">
+          <td align='left'> PINCODE </td>
+          <td> 
+            <input type="number" value="pincode">
+          </td>
+        </tr>
+
+        <tr height="30px">
+            <td align='left'> Employement Type </td>
+            <td>
+                <select name="Employement" width= "200px">
+                    <option value="Business">Business</option>
+                    <option value="Service">Service</option>
+                    <option value="Self-Employed">Self-Employed</option>
+                    <option value="Unemployed">Unmployed</option>
+                  </select>
+
+            </td>
+          </tr>
+
+        <tr height="30px"><td align='left'>New Password</td>
+          <td>
+          <input type="text" name="firstname" placeholder="Password">
+          </td> <td>  </td>
+          <td align='left' >  Old Password</td>
+          <td>
+          <input type="text" name="lastname" placeholder="Password">
+          </td></tr>
+  </table>
+
+    
+  </fieldset>
+
+<center>
+    <input type="submit" value="Submit">
+
+</center>
+
+</form>
+
+</body>
+</html>

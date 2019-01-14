@@ -1,0 +1,43 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+        $("#btn-phones").click(function(){
+             var PHONES = new Array("Gearless","Sports-Bike","Touring","Cruiser");
+                $("#dropdown").find('option').remove();
+                for(i=0; i < PHONES.length; i++){
+                     $("#dropdown").append('<option value="'+PHONES[i]+'">'+PHONES[i]+'</option>');
+                 }
+        });
+        $("#btn-cars").click(function(){
+              var CARS = new Array("Ford","Honda","Toyota","Suzuki");
+                  $("#dropdown").find('option').remove();
+                  for(i=0; i < CARS .length; i++){
+                      $("#dropdown").append('<option value="'+CARS [i]+'">'+CARS [i]+'</option>');
+                   }
+         });
+});
+</script>
+</head>
+<body>
+<select id="dropdown"></select>
+<button type="button" id="btn-phones">Populate Phones</button>
+<button type="button" id="btn-cars">Populate Cars</button>
+
+
+<!--
+                        <input type="radio" name="bike" value="Bike" id="btn-bikes"> Bike
+                    <input type="radio" name="car" value="Car" id="btn-cars"> Car<br>
+                    <br> </td></tr>                    <tr><td>
+                    Vehicle Type:   </td> <td>
+                    <select id = "dropdown">
+                            <option value = "Sedan" selected>Sedan</option>
+                            <option value = "Crossover">Crossover</option>
+                            <option value = "SUV">SUV</option>
+                            <option value = "Coupe">Coupe</option>
+                    </select>
+-->
+</body>
+</html>
